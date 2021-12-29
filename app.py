@@ -76,5 +76,5 @@ def upload_image():
         return render_template('home.html', prediction = 'Invalid File extension')
 # return the prediction to above templete
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 8000))
-    app.run(debug=True, port=port)
+    #port = int(os.environ.get("PORT", 8000))
+    app.run()
