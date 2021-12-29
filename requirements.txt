@@ -1,5 +1,5 @@
 numpy~=1.19.2
-Werkzeug==0.16.0
+Werkzeug==1.0.1
 Flask==1.1.1
 Pillow==7.2.0
 Keras==2.1.5
