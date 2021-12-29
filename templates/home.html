@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Disease Prediction of X-ray Images</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Covid-19 Detection Web Application</h1><br>
+        <h1>Upload a X-ray image of Chest for Prediction</h1><br>
+        <h2>Prediction of following disease :{Covid-19 and Viral Pneumonia}</h2>
+        
+        <hr>
+
+        <form action="{{ url_for('upload_image')}}" method="POST" enctype="multipart/form-data">
+
+          <div class="form-group">
+            <label>Select image</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" name="image" id="image">
+              
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Upload for Prediction</button>
+
+        </form>
+
+      </div>
+    </div>
+    <br>
+    {{ prediction }}
+  </div>
+  <h1>Ajeet Kumar<h1>
+    <p></p>
+</body>
